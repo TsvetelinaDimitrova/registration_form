@@ -14,7 +14,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Home</title>
+		<title>Weihnachtsmann Briefkasten</title>
 		<link rel="stylesheet" href="style_index.css">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="preconnect" href="https://fonts.gstatic.com">
