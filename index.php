@@ -29,7 +29,7 @@
 		<div class="grid-container">
 			<div id="p1">
 			
-				<!-- angemeldete Benutzerinformationen -->
+				<!-- Angemeldete Benutzerinformationen -->
 				<?php  if (isset($_SESSION['username'])) : ?>
 					<h3>Herzlich willkommen <strong><?php echo $_SESSION['username']; ?></strong></h3>
 			</div>
