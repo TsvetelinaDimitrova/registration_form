@@ -14,12 +14,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Home</title>
-		<link rel="stylesheet" href="style_index.css">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="preconnect" href="https://fonts.gstatic.com">
-		<link href="https://fonts.googleapis.com/css2?family=Mountains+of+Christmas&display=swap" rel="stylesheet">
-		<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Paprika">
+		
 	</head>
 	<body>
 		<div class="header">
