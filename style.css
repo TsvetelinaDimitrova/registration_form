@@ -1,0 +1,280 @@
+body {
+	background-image: url('reg_bild.jpg');
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	margin: 0;
+	font-family: "Paprika";
+}
+
+.header{
+	position:fixed;
+	top: 0;
+	left:0;
+}
+
+h1 { 
+	font-size: 36px;  
+	color: white;
+	text-shadow: 4px 4px 4px #aaa;
+	text-align: left;
+	margin-left:20px;
+	margin-top: 100px;
+} 
+
+h2 { 
+	font-size: 20px; 
+	color: white;
+	text-align: center;
+} 
+
+.buttons1 {	
+	width: 320px;
+	position: fixed;
+	top: 50%;
+	left: 5%;
+	margin: -25px 0 0 -25px;
+	color: #182F63;
+	font-family: 'Signika';
+	font-size: 22px;
+}
+
+.buttons2 {	
+	width: 300px;
+	position: fixed;
+	top: 70%;
+	left: 15%;
+	margin: -25px 0 0 -25px;
+	color: #182F63;
+	font-family: 'Signika';
+	font-size: 22px;
+}
+
+.button {
+	min-width: 300px;
+	min-height: 15px;
+	font-family: 'Signika';
+	font-size: 22px;
+	text-transform: uppercase;
+	letter-spacing: 1.3px;
+	font-weight: 500;
+	color: #F1F2F7;
+	background: #182F63;
+	background: linear-gradient(90deg, rgba(24, 47, 99,1) 20%, rgba(254, 249, 231,1) 100%);
+	border: none;
+	border-radius: 1000px;
+	box-shadow: 12px 12px 24px rgba(13, 45, 83,.64);
+	transition: all 0.3s ease-in-out 0s;
+	cursor: pointer;
+	outline: none;
+	position: relative;
+	padding: 10px;
+  }
+
+.button::before {
+	content: '';
+	border-radius: 1000px;
+	min-width: calc(300px + 12px);
+	min-height: calc(15px + 12px);
+	border: 3px solid #DDDDE1;
+	box-shadow: 0 0 60px rgba(0,255,203,.64);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	opacity: 0;
+	transition: all .3s ease-in-out 0s;
+}
+
+.button:hover, button:focus {
+	color: #182F63;
+	transform: translateY(-6px);
+}
+
+.button:hover::before, button:focus::before {
+	opacity: 1;
+}
+
+.button::after {
+	content: '';
+	width: 30px; height: 30px;
+	border-radius: 100%;
+	border: 6px solid #182F63;
+	position: absolute;
+	z-index: -1;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	animation: ring 1.5s infinite;
+}
+
+.button:hover::after, button:focus::after {
+	animation: none;
+	display: none;
+}
+
+@keyframes ring {
+  0% {
+    width: 30px;
+    height: 30px;
+    opacity: 1;
+  }
+  100% {
+    width: 300px;
+    height: 300px;
+    opacity: 0;
+  }
+}
+/* --------------------------- Login/Register Form --------------------------------------------------------------------------*/
+.form1 {
+	position: absolute;
+	top: 0%;
+	left: 50%;
+	display: none;
+}
+
+.signup-form {
+	font-family: 'Signika';
+	width: 500px;
+	margin:30px auto;
+	background:linear-gradient(to right, #ffffff 0%, #fafafa 50%, #ffffff 99%);
+	border-radius: 15px;
+}
+
+.form-header  {
+	background-color: #EFF0F1;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+}
+
+.form-header h1 {
+	font-size: 20px;
+	text-align:center;
+	color:#666;
+	padding:20px 60px;
+	border-bottom:1px solid #cccccc;
+}
+
+/*-------------------------- Form Body -------------*/
+.form-body {
+	padding:10px 40px;
+}
+
+.form-group{
+	margin-bottom:20px;
+}
+
+.form-body .label-title {
+	color: #427796;
+	font-size: 16px;
+}
+
+.input-group{
+	color:#666;
+}
+
+.form-body .form-input {
+    font-size: 14px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 34px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #333333;
+    text-align: left;
+    border: 1px solid #d6d6d6;
+    border-radius: 4px;
+    background: white;
+    outline: none;
+}
+
+
+
+.horizontal-group .left{
+	float:left;
+	width:49%;
+}
+
+.horizontal-group .right{
+	float:right;
+	width:49%;
+}
+
+
+::-webkit-input-placeholder {
+	color:#d9d9d9;
+}
+
+/*---------------- Form Footer -----------------------*/
+
+.form-footer {
+	clear:both;
+}
+
+.signup-form .form-footer  {
+	background-color: #EFF0F1;
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+	padding: 10px 40px;
+	text-align: right;
+	border-top: 1px solid #cccccc;
+	color:#666;
+}
+
+.form-footer span {
+	float:left;
+	color:#999;  
+	font-style: italic;
+}
+
+.btn {
+	display:inline-block;
+	padding:10px 40px;
+	font-size:14px;
+	border:none;
+	color: white;
+	cursor: pointer;
+	margin: 20px;
+	color: #F1F2F7;
+	background: #182F63;
+	border-radius: 1000px;
+}
+
+.btn:hover {
+	background-color: #85C1E9;
+	color:#427796;
+}
+.reset {
+	font-size:12px;
+	cursor: pointer;
+	margin: 10px;
+	background: #999;
+	border-radius: 1000px;
+}
+/*------------------------------- Login Form ------------------------------------------------------*/
+
+.login-form {
+	font-family: 'Signika';
+	width: 350px;
+	margin: 30px auto;
+	background:linear-gradient(to right, #ffffff 0%, #fafafa 50%, #ffffff 99%);
+	border-radius: 15px;
+}
+
+.form2 {
+	position: absolute;
+	top: 0%;
+	left: 50%;
+	display: none;
+}
+
+.login-form .form-footer  {
+	background-color: #EFF0F1;
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+	padding: 10px 40px;
+	text-align: right;
+	border-top: 1px solid #cccccc;
+	color:#666;
+}
